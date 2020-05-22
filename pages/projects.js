@@ -52,7 +52,7 @@ const projectsArray = [
             "The code for this app is hosted on Github, I'm using Netlify's built-in tools for continuous deployment, It's extremely useful for productivity, I just specified the Github repo and the build command and Netlify handles the rest.",
         imgUrl:
             'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/c0/1057255/580f07fc2c53d54072f72c3fba5570df-original.png',
-        projectLink: 'https://github.com/bnmounir/portfolio-2.0.0',
+        projectLink: 'https://github.com/bnmounir/portfolio_3',
     },
 ];
 

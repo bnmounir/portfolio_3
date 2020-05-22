@@ -16,7 +16,7 @@ const aboutArray = [
                 engineering is about finding clever ways to solve a problem,
                 that's what I set myself to accomplish from now on. the code for
                 this app is hosted on{' '}
-                <Anchor href='https://github.com/bnmounir/portfolio-2.0.0'>
+                <Anchor href='https://github.com/bnmounir/portfolio_3'>
                     Github.
                 </Anchor>
             </Paragraph>
