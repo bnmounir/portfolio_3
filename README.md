@@ -1,30 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# My Portfolio website
 
-## Getting Started
+## Tools Used
 
-First, run the development server:
+### [NEXT.JS](https://github.com/zeit/next.js)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+-   Generated a `basic` template using `yarn create next-app`, powerful for generating React applications with some extra features and a head start to your project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   My favorite way of building React apps.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+-   NEXT.JS is a powerful React framework using the JAMStack architecture.
 
-## Learn More
+### [Grommet V2](https://v2.grommet.io/)
 
-To learn more about Next.js, take a look at the following resources:
+-   build on top of styled components (my favorite way of dealing with CSS by far) it gives you a wonderful tool set of pre-build components that are highly customizable.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   build responsive and accessible mobile-first projects for the web with an easy to use component library.
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+### [Undraw](https://undraw.co/)
 
-## Deploy on Vercel
+-   Open-source illustrations for any idea you can imagine and create.
+-   A constantly updated design project with beautiful SVG images that you can use completely free and without attribution.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### netlify continuous deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7e8c47f1-4398-41b2-ba35-98c2b433f559/deploy-status)](https://app.netlify.com/sites/frosty-lamport-3a57b3/deploys)
