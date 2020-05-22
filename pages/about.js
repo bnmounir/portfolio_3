@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { Box, Clock, Heading, Paragraph, Anchor, Image } from 'grommet';
 
 import withWrapper from '../components/withWrapper';
-import { aboutData } from '../staticData';
 
 const aboutArray = [
     {
