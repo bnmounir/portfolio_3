@@ -31,14 +31,6 @@ const projectsArray = [
         projectLink: 'https://youtube-api-with-react.netlify.com/',
     },
     {
-        title: 'Software as a Service',
-        body:
-            'React · Redux · Node.js \n With an online tutorial, I learned to use React Redux, Express.JS, Node.JS, MongoDB, stripe for payment, and Google-Oauth with PassportJS.',
-        imgUrl:
-            'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/b0/1106303/11e67b59c0c57ffcc38d32ae2a393836-original.png',
-        projectLink: 'https://pacific-forest-82078.herokuapp.com/',
-    },
-    {
         title: 'Server Side Rendering',
         body:
             'React · NextJS · Bitcoin Api  \n A tiny app demonstrating isomorphic rendering and fetching data on top of NextJS framework',
