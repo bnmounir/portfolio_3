@@ -13,11 +13,11 @@ export default () => {
     };
 
     return (
-        <Grommet theme={hp}>
-            <Header background={{ color: '#69306d' }} pad='small'>
+        <Grommet theme={grommet}>
+            <Header background='brand' pad='small'>
                 <Box direction='row' align='center' gap='small'>
                     <Link href='/'>
-                        <a>Main</a>
+                        <a>Mounir Benabderrahmane</a>
                     </Link>
                     <Link href='/about'>
                         <a>About</a>

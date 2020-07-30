@@ -113,11 +113,12 @@ const aboutArray = [
             <Box
                 round='small'
                 border={{
-                    color: '#69306d',
-                    size: 'large',
+                    color: '#7D4CDB',
+                    size: 'xsmall',
 
                     side: 'all',
                 }}
+                overflow='hidden'
                 pad='none'
                 margin='none'
             >
@@ -173,8 +174,6 @@ const About = () => {
                     <Heading margin={{ top: 'none' }}>About</Heading>
                 </Box>
 
-                <img src='/about.svg' alt='guy on desk' />
-
                 {renderContent()}
                 <Box
                     key='time-clock'
@@ -183,9 +182,7 @@ const About = () => {
                     align='center'
                     key='time'
                     gap='medium'
-                >
-                    <Clock type='digital' className='chromatic-ignore' />
-                </Box>
+                ></Box>
             </Box>
         </>
     );

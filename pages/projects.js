@@ -28,7 +28,7 @@ const projectsArray = [
             'React, YouTube API, Axios \n A small interface for searching YouTube videos.',
         imgUrl:
             'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/51/1057230/8c8a0b2697af65179d209a256ed5a7e3-original.png',
-        projectLink: 'https://youtube-api-with-react.netlify.com/',
+        projectLink: 'https://github.com/bnmounir/youtube-api-react',
     },
     {
         title: 'Server Side Rendering',
@@ -84,9 +84,10 @@ const ProjectBoxList = () =>
                 height='medium'
                 width='medium'
                 border={{
-                    color: '#69306d',
-                    size: 'large',
+                    color: '#7D4CDB',
+                    size: 'medium',
                 }}
+                overflow='hidden '
                 round='small'
                 fill='horizontal'
             >
@@ -114,8 +115,6 @@ const Projects = () => (
                 <Box pad='medium'>
                     <Heading margin={{ top: 'none' }}>Projects</Heading>
                 </Box>
-
-                <img src='/projects.svg' alt='guy on desk' />
             </Box>
             {ProjectBoxList()}
         </Box>

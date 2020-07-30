@@ -1,93 +1,92 @@
 import React from 'react';
 import Head from 'next/head';
-import { Box, Main, Text, Heading, DataTable, Meter } from 'grommet';
+import { Box, Button, Text, Heading, Anchor } from 'grommet';
 
 import withWrapper from '../components/withWrapper';
 
 const index = () => (
     <div style={{ textAlign: 'center' }}>
         <Head>
-            <title>Moun's Portfolio</title>
+            <title>Mounir's Portfolio</title>
         </Head>
-        <Box animation='fadeIn' direction='column' pad='medium'>
-            <Main
-                elevation='large'
-                pad='large'
-                gap='large'
-                round='xsmall'
-                margin='medium'
-            >
-                <Heading margin='none'>Hi!</Heading>
-                <Text margin='small' size='large'>
-                    I'm Mounir, a Software Engineer. I strive to affect positive
-                    change at scale.
-                </Text>
-            </Main>
-
-            <img src='/guyOnDesk.svg' alt='guy on desk' />
-        </Box>
-        <Box
-            animation='fadeIn'
-            direction='column'
-            pad='medium'
-            justify='center'
-            align='center'
-        >
-            <Box
-                animation='fadeIn'
-                direction='column'
-                pad='medium'
-                justify='center'
-                align='center'
-            >
-                <Heading size='small'>Skills</Heading>
-            </Box>
-            <DataTable
-                size='medium'
-                columns={[
-                    {
-                        property: 'name',
-                        header: <Text size=''>Skill</Text>,
-                        primary: true,
-                    },
-                    {
-                        property: 'percent',
-                        header: 'Level',
-                        render: (datum) => (
-                            <Box pad={{ vertical: 'small' }}>
-                                <Meter
-                                    values={[
-                                        {
-                                            value: datum.percent,
-                                            color: `accent-${
-                                                (datum.key % 4) + 1
-                                            }`,
-                                        },
-                                    ]}
-                                    thickness='small'
-                                    size='medium'
+        <style jsx>
+            {`
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 95vw;
+                    min-height: 65vh;
+                }
+                .main-box {
+                    max-width: 400px;
+                }
+                .main-image {
+                    min-width: 320px;
+                    height: 400px;
+                    background: url('./me.png') no-repeat;
+                    background-size: contain;
+                }
+                @media screen and (max-width: 700px) {
+                    .container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 95vw;
+                        min-height: 65vh;
+                    }
+                }
+            `}
+        </style>
+        <div className='container'>
+            <div className='main-box'>
+                <Box
+                    animation='fadeIn'
+                    direction='column'
+                    pad='medium'
+                    justify='around'
+                >
+                    <Heading margin='xsmall' level='2'>
+                        Hi 👋! I'm Mounir, a Software Engineer
+                    </Heading>
+                    <Heading margin='xsmall' level='4'>
+                        I work on user experience, building applications, and
+                        making reliable software products. I can help you solve
+                        technical challenge you are facing
+                    </Heading>
+                    <Box>
+                        <div>
+                            <Anchor
+                                a11yTitle='schedule a meeting'
+                                onClick={() =>
+                                    window.open(
+                                        'https://calendly.com/bnmounir/30min',
+                                        '_blank'
+                                    )
+                                }
+                            >
+                                <Button
+                                    default
+                                    label="Let's Talk"
+                                    color='brand'
                                 />
-                            </Box>
-                        ),
-                    },
-                ]}
-                data={[
-                    { name: 'HTML', percent: 95, key: 1 },
-                    { name: 'CSS', percent: 90, key: 2 },
-                    { name: 'Javascript', percent: 90, key: 3 },
-                    { name: 'Typescript', percent: 75, key: 4 },
-                    { name: 'Python', percent: 70, key: 5 },
-                    { name: 'React', percent: 77, key: 7 },
-                    { name: 'Redux', percent: 77, key: 8 },
-                    { name: 'React Native', percent: 55, key: 9 },
-                    { name: 'Node', percent: 85, key: 10 },
-                    { name: 'Express', percent: 85, key: 11 },
-                    { name: 'Django', percent: 70, key: 12 },
-                    { name: 'SQL', percent: 70, key: 13 },
-                    { name: 'No-SQL', percent: 70, key: 14 },
-                ]}
-            />
-        </Box>
+                            </Anchor>
+                        </div>
+                    </Box>
+                </Box>
+            </div>
+            <div>
+                <Box
+                    animation='fadeIn'
+                    direction='row'
+                    pad='medium'
+                    justify='around'
+                >
+                    <div className='main-image'></div>
+                </Box>
+            </div>
+        </div>
     </div>
 );
 
