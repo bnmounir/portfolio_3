@@ -153,7 +153,7 @@ const renderContent = () =>
         </Box>
     ));
 
-const About = () => {
+export default function About() {
     return (
         <>
             <Head>
@@ -186,6 +186,4 @@ const About = () => {
             </Box>
         </>
     );
-};
-
-export default withWrapper(About);
+}

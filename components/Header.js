@@ -2,23 +2,27 @@ import React, { useContext } from 'react';
 import Link from 'next/link';
 
 import { ThemeContext } from './withWrapper';
-import { Grommet, Header, Box, CheckBox, Anchor, grommet } from 'grommet';
-
-import { hp } from 'grommet-theme-hp';
+import { Grommet, Header, Box, CheckBox, Anchor } from 'grommet';
+import { grommet } from 'grommet/themes';
 
 export default () => {
-    const { state, dispatch } = useContext(ThemeContext);
-    const changeTheme = (Bool) => {
-        dispatch({ type: 'TOGGLE', data: Bool });
-    };
-
     return (
-        <Grommet theme={grommet}>
-            <Header background='brand' pad='small'>
+        <Header
+            background='brand'
+            direction='row'
+            pad='small'
+            justify='between'
+            align='center'
+            gap='small'
+        >
+            {/* <Box direction='row' justify='between' align='center' gap='small'> */}
+            <Box>
+                <Link href='/'>
+                    <a>Mounir Benabderrahmane</a>
+                </Link>
+            </Box>
+            <Box>
                 <Box direction='row' align='center' gap='small'>
-                    <Link href='/'>
-                        <a>Mounir Benabderrahmane</a>
-                    </Link>
                     <Link href='/about'>
                         <a>About</a>
                     </Link>
@@ -26,15 +30,8 @@ export default () => {
                         <a>Projects</a>
                     </Link>
                 </Box>
-
-                <Box direction='row' align='center' gap='small'>
-                    <CheckBox
-                        label='Dark Mode'
-                        checked={state.themeMode}
-                        onChange={() => changeTheme(!state.themeMode)}
-                    />
-                </Box>
-            </Header>
-        </Grommet>
+            </Box>
+            {/* </Box> */}
+        </Header>
     );
 };

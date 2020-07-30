@@ -49,14 +49,6 @@ export default () => {
                             window.open('https://v2.grommet.io/', '_blank')
                         }
                     />{' '}
-                    +{' '}
-                    <Anchor
-                        a11yTitle='unDraw'
-                        label='unDraw'
-                        onClick={() =>
-                            window.open('https://undraw.co/', '_blank')
-                        }
-                    />
                     <br />
                 </Text>
             </Box>

@@ -96,29 +96,29 @@ const ProjectBoxList = () =>
         </Box>
     ));
 
-const Projects = () => (
-    <>
-        <Head>
-            <title>Projects</title>
-        </Head>
-
-        <Box pad='medium'>
+export default function Projects() {
+    return (
+        <>
             <Head>
                 <title>Projects</title>
             </Head>
-            <Box
-                animation='fadeIn'
-                direction='column'
-                pad='medium'
-                align='center'
-            >
-                <Box pad='medium'>
-                    <Heading margin={{ top: 'none' }}>Projects</Heading>
-                </Box>
-            </Box>
-            {ProjectBoxList()}
-        </Box>
-    </>
-);
 
-export default withWrapper(Projects);
+            <Box pad='medium'>
+                <Head>
+                    <title>Projects</title>
+                </Head>
+                <Box
+                    animation='fadeIn'
+                    direction='column'
+                    pad='medium'
+                    align='center'
+                >
+                    <Box pad='medium'>
+                        <Heading margin={{ top: 'none' }}>Projects</Heading>
+                    </Box>
+                </Box>
+                {ProjectBoxList()}
+            </Box>
+        </>
+    );
+}
